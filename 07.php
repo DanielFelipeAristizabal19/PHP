@@ -1,0 +1,49 @@
+<?php
+include 'includes/header.php';
+
+//Métodos
+
+class Empleado {
+    public $nombre;
+    public $apellido;
+    public $departamento;
+    public $email;
+    public $codigo;
+
+    public function __construct(string $nombre, string $apellido, string $departamento, string $email, int $codigo) {
+        $this->nombre = $nombre; //El this hace referencia a los atributos internos de la clase
+        $this->apellido = $apellido;
+        $this->departamento = $departamento;
+        $this->email = $email;
+        $this->codigo = $codigo;
+
+        
+    }
+
+    public function nombreEmpleado() {
+        echo $this->nombre . "" . $this->apellido;
+    }
+
+    public function departamento() {
+        return $this->departamento;
+    }
+}
+
+$empleado = new Empleado('Juan', 'Lopez', 'Risaralda', 'prueba@gmail.com', 123);
+//$empleado->nombreEmpleado();
+$empleado2 = new Empleado('Pepe', 'Lopez', 'Risaralda2', 'prueb2a@gmail.com', 323);
+//$empleado2->nombreEmpleado();
+
+
+
+echo"<pre>";
+var_dump($empleado);
+echo"</pre>";
+
+echo"<pre>";
+var_dump($empleado2);
+echo"</pre>";
+
+$empleado->nombreEmpleado();
+$departamento1 = $empleado->departamento();
+echo $departamento1;
