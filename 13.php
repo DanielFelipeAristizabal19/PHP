@@ -60,7 +60,7 @@ class Empleado {
     }
 }
 
-$empleado = new Empleado('Juan', 'Lopez', 'Risaralda', 'prueba@gmail.com', 123);
+$empleado = new Empleado('José', 'Lopez', 'Risaralda', 'prueba@gmail.com', 123);
 
 $nombre = $empleado->getNombre();
 
