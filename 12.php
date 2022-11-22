@@ -47,7 +47,7 @@ class Empleado {
 
 //Empleado::obtenerEmpleado();
 
-$empleado = new Empleado('Juan', 'Lopez', 'Risaralda', 'prueba@gmail.com', 123);
+$empleado = new Empleado('Miguel', 'Hernandez', 'Risaralda', 'prueba@gmail.com', 123);
 
 echo $empleado::getNombre();
 
